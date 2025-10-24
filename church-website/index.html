@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Baptist Church of Krotz Springs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <img src="crosspfp.jpg" alt="Church Logo" class="header-logo">
+            <h1>First Baptist Church of Krotz Springs</h1>
+        </div>
+        <p class="tagline">Building faith, hope, and love together.</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="admin.html">Admin</a>
+        </nav>
+    </header>
+
+    <main id="mainContent">
+        <section id="verse">
+            <h2>Random Verses</h2>
+            <p id="dailyVerse">Loading verse...</p>
+        </section>
+
+        <div id="sideSections">
+            <section id="messageOfTheDay">
+                <h2>Message Board</h2>
+                <p id="dailyMessage">Loading message...</p>
+            </section>
+
+            <section id="events">
+                <h2>Upcoming Events</h2>
+                <div id="calendar"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 First Baptist Church of Krotz Springs</p>
+    </footer>
+
+    <script type="module" src="firebase.js"></script>
+    <script type="module" src="verse.js"></script>
+</body>
+
+</html>

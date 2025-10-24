@@ -1,0 +1,138 @@
+/* --- General --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #1a1a1a;
+    margin: 0;
+    color: #fff;
+}
+
+/* Container to center everything */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centers all children horizontally */
+    width: 100%;
+}
+
+/* Header */
+header {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('banner_header_easter_cross.jpg') center/cover no-repeat;
+    width: 100%;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+header .tagline {
+    font-size: 1.3em;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+/* --- About Content --- */
+#aboutContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centers all sections */
+    gap: 60px;
+    max-width: 1000px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+/* Section titles */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* --- Cards --- */
+.leaderCardHorizontal,
+.staffCardHorizontal {
+    background: #2a2a2a;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.leader-photo-small,
+.staff-photo-small {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.leaderText, .staffText {
+    text-align: left;
+}
+
+/* --- Grid for multiple staff cards --- */
+.staffGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* center grid */
+    gap: 30px;
+}
+
+/* Fix width of cards in grid */
+.staffCardHorizontal {
+    flex: 0 1 250px; /* allows multiple cards side by side and centered */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #111;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .leaderCardHorizontal,
+    .staffCardHorizontal {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .leaderText, .staffText {
+        text-align: center;
+    }
+}

@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    justify-content: center; /* center the container */
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;  /* narrow width */
+    margin: 40px 10px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+
+h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 100%; /* fill container */
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 8px;
+    font-size: 0.95em;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #3366cc;
+    box-shadow: 0 0 5px rgba(51,102,204,0.3);
+}
+
+button {
+    background: #3366cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #224499;
+}
+
+#loginError, #saveStatus {
+    text-align: center;
+    font-weight: bold;
+}
+
+#dashboard, #eventsAdmin {
+    margin-top: 25px;
+}
+
+.eventItem, .calendarEvent {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.95em;
+}
+
+.eventItem button, .calendarEvent button {
+    background: #cc3333;
+    padding: 4px 8px;
+    font-size: 0.85em;
+}
+
+.eventItem button:hover, .calendarEvent button:hover {
+    background: #992222;
+}
+
+label {
+    font-weight: bold;
+}
+
+textarea {
+    resize: vertical;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="admin-style.css">
+  <title>Admin Dashboard</title>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Admin Dashboard</h2>
+    <p id="welcome"></p>
+
+    <h3>Message Board</h3>
+    <textarea id="messageInput" rows="4"></textarea>
+    <button id="saveMessage" >Save Message</button>
+    <p id="saveStatus"></p>
+
+    <h3>Manage Events</h3>
+    <form id="eventForm">
+      <input type="text" id="eventTitle" placeholder="Event Title" required>
+      <input type="date" id="eventDate">
+      <input type="time" id="eventTime">
+      <textarea id="eventDesc" placeholder="Event Description"></textarea>
+      <button type="submit">Add Event</button>
+    </form>
+    <div id="eventsList"></div>
+  </div>
+
+  <script type="module" src="dashboard.js"></script>
+</body>
+
+</html>
